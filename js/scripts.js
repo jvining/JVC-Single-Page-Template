@@ -6,11 +6,11 @@ $(function () {
 // Enables On-Scroll Behavhiors 
 $(function($) {
     $(window).scroll(function() {
-		var navbrand = $(".navbar-brand");
-        if ($(this).scrollTop() >= 180) {  
-            navbrand.removeClass('fa-3x');
-         } else
-			navbrand.addClass('fa-3x');
+	var navbrand = $(".navbar-brand");
+    if ($(this).scrollTop() >= 180) {  
+    	navbrand.removeClass('fa-3x');
+	} else
+		navbrand.addClass('fa-3x');
  	});
 });
 
