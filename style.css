@@ -8,12 +8,7 @@ Author URI: https://github.com/jvining
 */
  
 body {background:#fbfbfb; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
-body h1, body h2, body h3, body h4, body h5 {font-weight:700; font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
-body [class*='col-'] {font-size:16px; color:#5f5f5f;}
-
-body a {color:#1abc9c;}
-body a:hover {color:#16a085;}
-
+ 
 body nav.navbar{transition:.3s ease-in-out; box-shadow: 0 3px 10px 1px rgba(0,0,0,.7)!important;}
 
 body .jumbotron {height:65vh; min-height:650px;}
@@ -26,11 +21,18 @@ body .jumbotron {height:65vh; min-height:650px;}
 @media(max-width:990px){.navbar-brand.fa-3x{font-size:1.5em!important;}}
 @media(max-width:768px){.navbar-brand.fa-3x{font-size:1.25em!important;}}
 
+/* Typography */
+body h1, body h2, body h3, body h4, body h5 {font-weight:700; font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';}
+p, ul, ol, li, table, address, blockquote, cite{color:#5f5f5f; font-size:16px; line-height:1.75em; font-weight:400; font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
+a{color:#1abc9c; font-weight:bold;}
+a:hover, a:focus{color:#16a085;}
+
 .text-light {font-weight:300;}
 .text-normal{font-weight:400;}
 .text-bold {font-weight:700;}
 .text-shadow {text-shadow:rgba(0,0,0,.25).045em .045em;}
 
+/* Utilities */
 .page-header:before{content:"\2013  ";} 
 .page-header:after{content:" \2013";} 
 
@@ -40,18 +42,18 @@ body .jumbotron {height:65vh; min-height:650px;}
 .bg-primary{background-color:#1abc9c!important;}
 .bg-secondary{background-color:#2c3e50!important;}
 
-.btn,.btn:hover {transition:.3s ease-in-out;}
-.btn-xl{padding:.75rem 1.3rem; font-size:1.75rem; line-height:1.5; border-radius:.3rem;}
-@media(max-width:768px){.btn-xl{font-size:1.5rem; padding:.5rem 1rem;}}
+/* Buttons Styles */
+.btn-danger, .btn-success, .btn-warning, .btn-primary, .btn-info, .btn-default, .btn-register, .btn-event, .btn-inverse, .btn-default, .btn-secondary{color:#fff!important; font-weight:600; font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+.btn:hover, .btn:focus{color:#fff!important;}
+.btn-outline-light:hover,.btn-outline-light:focus{color:#182b3d!important;}
+.btn-xl{padding: .5em .85em!important;font-size:1.5em!important;}
+@media(max-width:450px){.btn-xl,.btn-lg,.btn-md,.btn-sm,.btn-xs{font-size:1em!important;}}
 
-.btn-primary{color:#fff!important; background-color:#1abc9c; border-color:#1abc9c;}
-.btn-primary:hover{color:#fff!important; background-color:#16a085; border-color:#15967d;}
+.btn-primary{background-color:#1abc9c; border-color:#1abc9c;}
+.btn-primary:hover{background-color:#16a085; border-color:#15967d;}
 
-.btn-secondary{color:#fff!important; background-color:#2c3e50; border-color:#2c3e50;}
-.btn-secondary:hover{color:#fff!important; background-color:#253544; border-color:#233240;}
-
-.btn-outline-light{color:#f8f9fa; border-color:#f8f9fa;}
-.btn-outline-light:hover{color:#000; background-color:#f8f9fa; border-color:#f8f9fa;}
+.btn-secondary{background-color:#2c3e50; border-color:#2c3e50;}
+.btn-secondary:hover{background-color:#182b3d; border-color:#182b3d;}
  
 body form .form-control-xl{height:calc(3.25rem + 5px);padding:.75rem 1.25rem;font-size:1.5rem;line-height:1.75;border-radius:.4rem;}
 body form .form-control{transition:.3s ease-in-out;}
@@ -59,8 +61,8 @@ body form .form-control:focus{border-bottom-color:#1abc9c!important; transition:
 body form label{opacity:0.0;}
 body form input, body form textarea {border:none!important; border-bottom:#eee solid 1px!important;  background:#fbfbfb!important; border-radius:0!important;}
  
- 
 .img-container{position:relative; background:#16a085; top:0; border-radius: .25rem!important;}
+.img-container i {z-index:9999999; text-shadow:rgba(0,0,0,.25).045em .045em; -webkit-text-stroke-width:1px; -webkit-text-stroke-color:#999; position:absolute; top:35%; left:45%;}
 .img-container img{opacity:1;}
 .img-container img:hover{opacity:.5;}
 
