@@ -4,16 +4,12 @@ $(function () {
 });
 
 // Enables On-Scroll Behavhiors 
-$(function($) {
-    $(window).scroll(function() {
-	var navbrand = $(".navbar-brand");
-    if ($(this).scrollTop() >= 180) {  
-    	navbrand.removeClass('fa-2x');
-	} else
-		navbrand.addClass('fa-2x');
- 	});
+$(document).ready(function () {
+	$(window).scroll(function () {
+		$('.navbar-brand').toggleClass("fa-2x", ($(window).scrollTop() < 150));
+	});
 });
- 
+
 // Enables Scroll with Offsets
 $('.scroll').on('click',function(e) {
 	e.preventDefault();
